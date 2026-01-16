@@ -1,0 +1,98 @@
+.contacts-modal {
+  max-width: 500px;
+  max-height: 80vh;
+}
+
+.contacts-content {
+  padding: 0;
+  max-height: calc(80vh - 80px);
+  overflow-y: auto;
+}
+
+.contacts-loading,
+.contacts-error,
+.contacts-empty {
+  padding: 40px 24px;
+  text-align: center;
+  color: #667781;
+}
+
+.contacts-error {
+  color: #c33;
+}
+
+.contacts-empty p {
+  margin: 8px 0;
+}
+
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  cursor: pointer;
+  border-bottom: 1px solid #f0f2f5;
+  gap: 12px;
+  transition: background-color 0.2s;
+}
+
+.contact-item:hover {
+  background-color: #f5f6f6;
+}
+
+.contact-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.contact-name {
+  font-weight: 500;
+  color: #111b21;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.contact-email {
+  font-size: 14px;
+  color: #667781;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.contact-delete {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #667781;
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+
+.contact-delete:hover {
+  background-color: #fee;
+  color: #c33;
+}
