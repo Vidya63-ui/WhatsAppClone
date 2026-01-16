@@ -218,7 +218,6 @@ NODE_ENV=development
 MONGODB_URI=mongodb://localhost:27017/
 
 # JWT
-JWT_SECRET=takeYour$1$Time
 JWT_EXPIRE=7d
 
 # CORS
