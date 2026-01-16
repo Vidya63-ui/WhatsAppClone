@@ -32,7 +32,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Parse CORS origins from environment variable
-const corsOrigins = process.env.ALLOWED_ORIGINS?.split(',') || ['http://localhost:3000', 'http://localhost:5173'];
+const corsOrigins = process.env.ALLOWED_ORIGINS?.split(',') || ['https://whatsappclone-fqbr.onrender.com/','http://localhost:3000', 'http://localhost:5173'];
 
 app.use(cors({
     origin: corsOrigins,
